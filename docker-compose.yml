@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  app:
+    build: ./app
+    command: python main.py
+    volumes:
+      - ./figs:/var/figs
+    environment:
+      BOT_TOKEN: 6215152876:AAGeh1dGn3a9Zi8oOjWSs6VELHo41A0sXn8
+      PYTHONUNBUFFERED: 1
+      PATH_TO_FIGS_FOLDER: /var/figs
